@@ -51,8 +51,8 @@ namespace MinecraftServerStarter.Services
 
                 var ipv4 = GetCurrentIPV4();
 
-                _settings.UpdateProperty("host", $"{ipv4}:{_settings.Port}");
-                _settings.UpdateProperty("address", $"{ipv4}:{_vanillaPort}");
+                _settings.UpdateProperty("host", $" {ipv4}:{_settings.Port}");
+                _settings.UpdateProperty("address", $" {ipv4}:{_vanillaPort}");
             }
             catch (Exception e)
             {
